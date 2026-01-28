@@ -68,30 +68,13 @@ This project was created to:
 - Haar Cascade XML models
 
 ---
-
-## 🏗️ System Architecture
-```text
-Webcam
-  ↓
-Frame Capture
-  ↓
-Grayscale Conversion
-  ↓
-Face Detection
-  ↓
- ┌───────────────┐
- │ Eye Detection │
- │ Smile Detect. │
- └───────────────┘
-  ↓
-Bounding Boxes + Visualization
-
 ##📂 Project Structure
 project/
 │
 ├── face_detection.py        # Main application logic
 ├── README.md                # Project documentation
 └── requirements.txt         # (Optional) dependencies
+---
 ## 🖥️ Installation
 
 ## 1️⃣ Install Python
@@ -115,8 +98,26 @@ Webcam opens automatically
 Detection runs in real time
 
 Press Q to exit
+---
 ## 🎨 Detection Color Legend
 Object	Color
 Face	🟩 Green
 Eyes	🟦 Blue
 Smile	🟥 Red
+---
+## 🏗️ System Architecture
+```text
+Webcam
+  ↓
+Frame Capture
+  ↓
+Grayscale Conversion
+  ↓
+Face Detection
+  ↓
+ ┌───────────────┐
+ │ Eye Detection │
+ │ Smile Detect. │
+ └───────────────┘
+  ↓
+Bounding Boxes + Visualization
